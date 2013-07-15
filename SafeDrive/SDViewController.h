@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SDViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UILabel *mLabelSpeed;
+@property (nonatomic, weak) IBOutlet UIView *mViewLock;
+
+- (void)showLock;
+- (void)hideLock;
 
 @end

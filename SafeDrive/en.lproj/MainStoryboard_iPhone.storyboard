@@ -1,23 +1,152 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="SDViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8b-sT-lN6">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-7Y-P4Q">
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-x2-erk">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" type="user" id="AOi-1X-ND3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="0wg-x2-erk" firstAttribute="trailing" secondItem="2uN-7Y-P4Q" secondAttribute="trailing" type="default" id="GbT-8E-ON1"/>
+                                            <constraint firstAttribute="centerY" secondItem="0wg-x2-erk" secondAttribute="centerY" type="user" id="Kzc-9n-jPf"/>
+                                            <constraint firstAttribute="height" constant="320" type="user" id="ddY-Wg-5SP"/>
+                                            <constraint firstItem="0wg-x2-erk" firstAttribute="leading" secondItem="2uN-7Y-P4Q" secondAttribute="leading" type="default" id="kdr-iv-0hp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41568627450980389" green="0.65098039215686276" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2uN-7Y-P4Q" firstAttribute="leading" secondItem="i8b-sT-lN6" secondAttribute="leading" type="default" id="9Md-dS-oKS"/>
+                                    <constraint firstAttribute="centerY" secondItem="2uN-7Y-P4Q" secondAttribute="centerY" type="user" id="kgD-BL-Qq9"/>
+                                    <constraint firstItem="2uN-7Y-P4Q" firstAttribute="trailing" secondItem="i8b-sT-lN6" secondAttribute="trailing" type="default" id="rrX-7b-IUj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-Fl-gyI">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Qm-lff">
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="229" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-QZ-dx2">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="238" id="6yF-XU-bVR"/>
+                                                    <constraint firstAttribute="width" constant="229" id="hAi-wm-RB0"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="OVER 15 km/h ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="คุณอยู่ในความเร็วไม่ปลอดภัย">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="Thonburi"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="  ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="ควรหยุดใช้">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="Thonburi"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="การพิมพ์ข้อความ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="Thonburi"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ORp-QZ-dx2" firstAttribute="centerX" secondItem="f4m-Qm-lff" secondAttribute="centerX" type="default" id="a7U-3t-i6T"/>
+                                            <constraint firstItem="ORp-QZ-dx2" firstAttribute="top" secondItem="f4m-Qm-lff" secondAttribute="top" constant="125" id="pc4-u9-T2h"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="trailing" secondItem="7Wm-Fl-gyI" secondAttribute="trailing" type="default" id="Wfi-iD-vNq"/>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="bottom" secondItem="7Wm-Fl-gyI" secondAttribute="bottom" type="default" id="f0o-lZ-vMP"/>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="leading" secondItem="7Wm-Fl-gyI" secondAttribute="leading" type="default" id="uYv-Th-gLG"/>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="top" secondItem="7Wm-Fl-gyI" secondAttribute="top" type="default" id="yad-ek-jDs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i8b-sT-lN6" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="3se-Y0-26H"/>
+                            <constraint firstItem="i8b-sT-lN6" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="5Zo-66-N5l"/>
+                            <constraint firstItem="i8b-sT-lN6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="EV6-tV-yAd"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Jyd-0N-mKi"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Nhl-vn-AKV"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Sz6-xq-RXh"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="c5J-a2-l0v"/>
+                            <constraint firstItem="i8b-sT-lN6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="ljm-Qq-mHo"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="mLabelSpeed" destination="0wg-x2-erk" id="Nb4-1U-83G"/>
+                        <outlet property="mViewLock" destination="7Wm-Fl-gyI" id="jD5-rk-GTw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SDViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SDViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mLabelSpeed" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mViewLock" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -8,22 +8,47 @@
 
 #import "SDViewController.h"
 
-@interface SDViewController ()
-
-@end
-
 @implementation SDViewController
+
+@synthesize mLabelSpeed;
+@synthesize mViewLock;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+
+- (void)showLock {
+    if(![mViewLock isHidden])
+        return;
+    
+    [mViewLock setHidden:NO];
+    [mViewLock setAlpha:0.0];
+    [UIView animateWithDuration:0.3 animations:^{
+        [mViewLock setAlpha:1.0];
+    }];
+}
+
+- (void)hideLock {
+    if([mViewLock isHidden])
+        return;
+
+    [mViewLock setAlpha:1.0];
+    [UIView animateWithDuration:0.3 animations:^{
+        [mViewLock setAlpha:0.0];
+    }completion:^(BOOL finished){
+        [mViewLock setHidden:YES];
+    }];
+
+    
+}
+
 
 @end
