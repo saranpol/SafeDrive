@@ -21,7 +21,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="progress_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-no-EL4"/>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-x2-erk">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-x2-erk">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" type="user" id="AOi-1X-ND3"/>
                                                 </constraints>
@@ -75,7 +75,7 @@
                                     <constraint firstItem="2uN-7Y-P4Q" firstAttribute="trailing" secondItem="i8b-sT-lN6" secondAttribute="trailing" type="default" id="rrX-7b-IUj"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-Fl-gyI">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-Fl-gyI">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Qm-lff">
                                         <subviews>
