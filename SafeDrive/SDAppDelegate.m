@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 
     self.mLocationManager = [[CLLocationManager alloc] init];
     [mLocationManager setDelegate:self];
@@ -81,6 +81,8 @@
         isInBackground = YES;
     
     float speed = loc.speed*3600.0/1000.0;
+    if(speed < 0)
+        speed = 0;
     
     if (isInBackground) {
         NSLog(@"background speed %.2f", speed);
@@ -90,7 +92,13 @@
     }else{
         NSLog(@"foreground speed %.2f", speed);
         SDViewController *vc = (SDViewController*)self.window.rootViewController;
-        [vc.mLabelSpeed setText:[NSString stringWithFormat:@"%.2f", speed]];
+        [vc.mLabelSpeed setText:[NSString stringWithFormat:@"%.0f", speed]];
+        float p = speed/15.0;
+        if(p > 1.0)
+            p = 1.0;
+        if(p <= 0.0)
+            p = 0.001;
+        [vc setProgress:p];
         if(speed > 15.0)
             [vc showLock];
         else

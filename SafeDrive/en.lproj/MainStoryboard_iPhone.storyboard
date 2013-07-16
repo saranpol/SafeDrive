@@ -16,21 +16,55 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uN-7Y-P4Q">
                                         <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="progress_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vfv-96-Bwq"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72W-PS-K6E" customClass="ViewCircle">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="progress_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-no-EL4"/>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-x2-erk">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" type="user" id="AOi-1X-ND3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="185"/>
+                                                <color key="textColor" red="0.41568627450000001" green="0.65098039220000004" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="km/h" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLa-Zx-jFg">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="91" id="Qai-Dl-Mwu"/>
+                                                    <constraint firstAttribute="height" constant="21" id="Upt-ae-xgY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <color key="textColor" red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-AX-5XW">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="122" id="dTg-NR-DP7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="centerX" secondItem="72W-PS-K6E" secondAttribute="centerX" type="user" id="5g8-Mv-SFB"/>
+                                            <constraint firstItem="5lt-AX-5XW" firstAttribute="centerX" secondItem="0wg-x2-erk" secondAttribute="centerX" type="default" id="6a2-hj-b9F"/>
+                                            <constraint firstAttribute="centerY" secondItem="O0I-no-EL4" secondAttribute="centerY" type="user" id="CF4-0f-clc"/>
+                                            <constraint firstItem="0wg-x2-erk" firstAttribute="top" secondItem="2uN-7Y-P4Q" secondAttribute="top" constant="83" id="GOL-9M-BQ3"/>
                                             <constraint firstItem="0wg-x2-erk" firstAttribute="trailing" secondItem="2uN-7Y-P4Q" secondAttribute="trailing" type="default" id="GbT-8E-ON1"/>
-                                            <constraint firstAttribute="centerY" secondItem="0wg-x2-erk" secondAttribute="centerY" type="user" id="Kzc-9n-jPf"/>
+                                            <constraint firstAttribute="centerY" secondItem="72W-PS-K6E" secondAttribute="centerY" type="user" id="L0M-5s-dzk"/>
+                                            <constraint firstAttribute="centerX" secondItem="Vfv-96-Bwq" secondAttribute="centerX" type="user" id="Mfh-yP-cKZ"/>
+                                            <constraint firstItem="72W-PS-K6E" firstAttribute="top" secondItem="2uN-7Y-P4Q" secondAttribute="top" constant="43" id="PeP-yk-gTv"/>
+                                            <constraint firstAttribute="centerY" secondItem="Vfv-96-Bwq" secondAttribute="centerY" type="user" id="QaP-9h-bYH"/>
                                             <constraint firstAttribute="height" constant="320" type="user" id="ddY-Wg-5SP"/>
+                                            <constraint firstItem="tLa-Zx-jFg" firstAttribute="centerX" secondItem="0wg-x2-erk" secondAttribute="centerX" type="default" id="g7w-57-1Es"/>
+                                            <constraint firstItem="5lt-AX-5XW" firstAttribute="top" secondItem="2uN-7Y-P4Q" secondAttribute="top" constant="-4" id="gYC-Dz-nhG"/>
                                             <constraint firstItem="0wg-x2-erk" firstAttribute="leading" secondItem="2uN-7Y-P4Q" secondAttribute="leading" type="default" id="kdr-iv-0hp"/>
+                                            <constraint firstAttribute="centerX" secondItem="O0I-no-EL4" secondAttribute="centerX" type="user" id="n40-VL-0Ms"/>
+                                            <constraint firstItem="72W-PS-K6E" firstAttribute="leading" secondItem="2uN-7Y-P4Q" secondAttribute="leading" constant="43" id="vRg-dE-Mc8"/>
+                                            <constraint firstAttribute="bottom" secondItem="tLa-Zx-jFg" secondAttribute="bottom" constant="82" id="z2T-il-SaV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -45,71 +79,112 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Qm-lff">
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="229" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-QZ-dx2">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="alert_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rVg-3L-goD"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-9m-Vf5">
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="img_lock.png" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-u2-S3O"/>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ORp-QZ-dx2">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="104" id="Gw5-cW-w68"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="OVER 15 km/h">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="24" name="Thonburi"/>
+                                                                    <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="ove-fz-55j">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="104" id="ONn-nu-a5o"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="คุณอยู่ในความเร็วไม่ปลอดภัย">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="22" name="Thonburi"/>
+                                                                    <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="tv7-P1-uGe">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="104" id="sLS-FP-oAQ"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="ควรหยุดใช้">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="60" name="Thonburi"/>
+                                                                    <font key="NSOriginalFont" size="60" name="Thonburi"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-57-F1W">
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="104" id="dSO-EG-BcY"/>
+                                                        </constraints>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="การพิมพ์ข้อความ">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <font key="NSFont" size="37" name="Thonburi"/>
+                                                                    <font key="NSOriginalFont" size="14" name="Helvetica"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="238" id="6yF-XU-bVR"/>
-                                                    <constraint firstAttribute="width" constant="229" id="hAi-wm-RB0"/>
+                                                    <constraint firstItem="ORp-QZ-dx2" firstAttribute="leading" secondItem="kGo-9m-Vf5" secondAttribute="leading" type="default" id="0Sq-4I-rHQ"/>
+                                                    <constraint firstItem="H4B-57-F1W" firstAttribute="leading" secondItem="kGo-9m-Vf5" secondAttribute="leading" type="default" id="0tu-wg-eYk"/>
+                                                    <constraint firstItem="ORp-QZ-dx2" firstAttribute="trailing" secondItem="kGo-9m-Vf5" secondAttribute="trailing" type="default" id="5RD-fe-6nO"/>
+                                                    <constraint firstItem="tv7-P1-uGe" firstAttribute="top" secondItem="kGo-9m-Vf5" secondAttribute="top" constant="98" id="6Ni-1B-LGF"/>
+                                                    <constraint firstItem="1N4-u2-S3O" firstAttribute="top" secondItem="kGo-9m-Vf5" secondAttribute="top" constant="221" id="6aN-jO-6Zj"/>
+                                                    <constraint firstItem="tv7-P1-uGe" firstAttribute="leading" secondItem="kGo-9m-Vf5" secondAttribute="leading" type="default" id="7kZ-oN-Mnh"/>
+                                                    <constraint firstItem="ove-fz-55j" firstAttribute="top" secondItem="kGo-9m-Vf5" secondAttribute="top" constant="49" id="DA0-1l-4Qj"/>
+                                                    <constraint firstItem="H4B-57-F1W" firstAttribute="top" secondItem="kGo-9m-Vf5" secondAttribute="top" constant="139" id="KUi-xB-GfM"/>
+                                                    <constraint firstItem="H4B-57-F1W" firstAttribute="centerX" secondItem="1N4-u2-S3O" secondAttribute="centerX" type="default" id="OzU-f5-CbH"/>
+                                                    <constraint firstItem="tv7-P1-uGe" firstAttribute="trailing" secondItem="kGo-9m-Vf5" secondAttribute="trailing" type="default" id="YTR-gV-7Vo"/>
+                                                    <constraint firstItem="H4B-57-F1W" firstAttribute="trailing" secondItem="kGo-9m-Vf5" secondAttribute="trailing" type="default" id="cMK-c6-nlj"/>
+                                                    <constraint firstItem="ORp-QZ-dx2" firstAttribute="top" secondItem="kGo-9m-Vf5" secondAttribute="top" constant="-16" id="fVE-AL-ZJ3"/>
+                                                    <constraint firstItem="ove-fz-55j" firstAttribute="leading" secondItem="kGo-9m-Vf5" secondAttribute="leading" type="default" id="nvA-Uo-C1W"/>
+                                                    <constraint firstItem="ove-fz-55j" firstAttribute="trailing" secondItem="kGo-9m-Vf5" secondAttribute="trailing" type="default" id="rNy-Pc-obv"/>
+                                                    <constraint firstAttribute="height" constant="460" type="user" id="tSN-QB-Kll"/>
                                                 </constraints>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="OVER 15 km/h ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="คุณอยู่ในความเร็วไม่ปลอดภัย">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="Thonburi"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="  ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="ควรหยุดใช้">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="Thonburi"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="LucidaGrande"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="การพิมพ์ข้อความ">
-                                                        <attributes>
-                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <font key="NSFont" size="24" name="Thonburi"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </view>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="ORp-QZ-dx2" firstAttribute="centerX" secondItem="f4m-Qm-lff" secondAttribute="centerX" type="default" id="a7U-3t-i6T"/>
-                                            <constraint firstItem="ORp-QZ-dx2" firstAttribute="top" secondItem="f4m-Qm-lff" secondAttribute="top" constant="125" id="pc4-u9-T2h"/>
+                                            <constraint firstItem="kGo-9m-Vf5" firstAttribute="leading" secondItem="f4m-Qm-lff" secondAttribute="leading" type="default" id="Beo-WD-NK1"/>
+                                            <constraint firstItem="kGo-9m-Vf5" firstAttribute="trailing" secondItem="f4m-Qm-lff" secondAttribute="trailing" type="default" id="Blf-ke-W97"/>
+                                            <constraint firstItem="rVg-3L-goD" firstAttribute="bottom" secondItem="f4m-Qm-lff" secondAttribute="bottom" type="user" id="KTl-Xl-rsh"/>
+                                            <constraint firstItem="rVg-3L-goD" firstAttribute="top" secondItem="f4m-Qm-lff" secondAttribute="top" type="user" id="M2n-SD-leE"/>
+                                            <constraint firstItem="rVg-3L-goD" firstAttribute="leading" secondItem="f4m-Qm-lff" secondAttribute="leading" type="default" id="bGD-Vf-ZSP"/>
+                                            <constraint firstAttribute="centerY" secondItem="kGo-9m-Vf5" secondAttribute="centerY" type="user" id="v7W-gT-N2Q"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="trailing" secondItem="7Wm-Fl-gyI" secondAttribute="trailing" type="default" id="Wfi-iD-vNq"/>
-                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="bottom" secondItem="7Wm-Fl-gyI" secondAttribute="bottom" type="default" id="f0o-lZ-vMP"/>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="bottom" secondItem="7Wm-Fl-gyI" secondAttribute="bottom" type="user" id="f0o-lZ-vMP"/>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="leading" secondItem="7Wm-Fl-gyI" secondAttribute="leading" type="default" id="uYv-Th-gLG"/>
-                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="top" secondItem="7Wm-Fl-gyI" secondAttribute="top" type="default" id="yad-ek-jDs"/>
+                                    <constraint firstItem="f4m-Qm-lff" firstAttribute="top" secondItem="7Wm-Fl-gyI" secondAttribute="top" type="user" id="yad-ek-jDs"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -120,14 +195,22 @@
                             <constraint firstItem="i8b-sT-lN6" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="EV6-tV-yAd"/>
                             <constraint firstItem="7Wm-Fl-gyI" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Jyd-0N-mKi"/>
                             <constraint firstItem="7Wm-Fl-gyI" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Nhl-vn-AKV"/>
-                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Sz6-xq-RXh"/>
-                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="c5J-a2-l0v"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="top" secondItem="3" secondAttribute="top" type="user" id="Sz6-xq-RXh"/>
+                            <constraint firstItem="7Wm-Fl-gyI" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="user" id="c5J-a2-l0v"/>
                             <constraint firstItem="i8b-sT-lN6" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="ljm-Qq-mHo"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="mLabelAlert" destination="ORp-QZ-dx2" id="USe-zs-oub"/>
+                        <outlet property="mLabelAlert1" destination="ove-fz-55j" id="5HV-pb-Ood"/>
+                        <outlet property="mLabelAlert2" destination="tv7-P1-uGe" id="9IC-FY-bLz"/>
+                        <outlet property="mLabelAlert3" destination="H4B-57-F1W" id="rJQ-ft-phO"/>
+                        <outlet property="mLabelKMH" destination="tLa-Zx-jFg" id="PnH-qQ-3zK"/>
                         <outlet property="mLabelSpeed" destination="0wg-x2-erk" id="Nb4-1U-83G"/>
+                        <outlet property="mLabelSpeedText" destination="5lt-AX-5XW" id="3GY-rt-SSh"/>
+                        <outlet property="mViewBG" destination="i8b-sT-lN6" id="ONg-OY-bXg"/>
+                        <outlet property="mViewCircle" destination="72W-PS-K6E" id="Hqw-VE-QFF"/>
                         <outlet property="mViewLock" destination="7Wm-Fl-gyI" id="jD5-rk-GTw"/>
                     </connections>
                 </viewController>
@@ -135,6 +218,12 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="alert_bg.png" width="320" height="568"/>
+        <image name="img_lock.png" width="246" height="268"/>
+        <image name="progress_back.png" width="247" height="247"/>
+        <image name="progress_top.png" width="214" height="214"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
@@ -142,9 +231,20 @@
         <class className="SDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SDViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="mLabelAlert" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelAlert1" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelAlert2" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelAlert3" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelKMH" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mLabelSpeed" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mLabelSpeedText" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mViewBG" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mViewCircle" candidateClass="ViewCircle"/>
                 <relationship kind="outlet" name="mViewLock" candidateClass="UIView"/>
             </relationships>
+        </class>
+        <class className="ViewCircle" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewCircle.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

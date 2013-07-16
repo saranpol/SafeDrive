@@ -7,14 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ViewCircle.h"
 
 @interface SDViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UILabel *mLabelSpeed;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelKMH;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelSpeedText;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelAlert;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelAlert1;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelAlert2;
+@property (nonatomic, weak) IBOutlet UILabel *mLabelAlert3;
 @property (nonatomic, weak) IBOutlet UIView *mViewLock;
+@property (nonatomic, weak) IBOutlet UIView *mViewBG;
+@property (nonatomic, weak) IBOutlet ViewCircle *mViewCircle;
 
 - (void)showLock;
 - (void)hideLock;
+- (void)setProgress:(float)p;
+
 
 @end
