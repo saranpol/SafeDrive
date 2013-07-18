@@ -21,6 +21,7 @@
 @property (nonatomic, weak) IBOutlet UIView *mViewLock;
 @property (nonatomic, weak) IBOutlet UIView *mViewBG;
 @property (nonatomic, weak) IBOutlet ViewCircle *mViewCircle;
+@property (nonatomic, weak) IBOutlet UIImageView *mImageAlert;
 
 - (void)showLock;
 - (void)hideLock;

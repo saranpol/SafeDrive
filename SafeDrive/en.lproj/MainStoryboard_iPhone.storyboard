@@ -75,9 +75,12 @@
                                     <constraint firstItem="2uN-7Y-P4Q" firstAttribute="trailing" secondItem="i8b-sT-lN6" secondAttribute="trailing" type="default" id="rrX-7b-IUj"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-Fl-gyI">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-Fl-gyI">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Qm-lff">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3L-iy-19f">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-Qm-lff">
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="alert_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rVg-3L-goD"/>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGo-9m-Vf5">
@@ -181,9 +184,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="D3L-iy-19f" firstAttribute="bottom" secondItem="7Wm-Fl-gyI" secondAttribute="bottom" type="default" id="6TH-xn-tcf"/>
+                                    <constraint firstItem="D3L-iy-19f" firstAttribute="leading" secondItem="7Wm-Fl-gyI" secondAttribute="leading" type="default" id="D3G-Pg-OQK"/>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="trailing" secondItem="7Wm-Fl-gyI" secondAttribute="trailing" type="default" id="Wfi-iD-vNq"/>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="bottom" secondItem="7Wm-Fl-gyI" secondAttribute="bottom" type="user" id="f0o-lZ-vMP"/>
+                                    <constraint firstItem="D3L-iy-19f" firstAttribute="trailing" secondItem="7Wm-Fl-gyI" secondAttribute="trailing" type="default" id="mhx-8C-Ik4"/>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="leading" secondItem="7Wm-Fl-gyI" secondAttribute="leading" type="default" id="uYv-Th-gLG"/>
+                                    <constraint firstItem="D3L-iy-19f" firstAttribute="top" secondItem="7Wm-Fl-gyI" secondAttribute="top" type="default" id="xl8-i4-z1d"/>
                                     <constraint firstItem="f4m-Qm-lff" firstAttribute="top" secondItem="7Wm-Fl-gyI" secondAttribute="top" type="user" id="yad-ek-jDs"/>
                                 </constraints>
                             </view>
@@ -202,6 +209,7 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="mImageAlert" destination="D3L-iy-19f" id="dyy-f5-eTg"/>
                         <outlet property="mLabelAlert" destination="ORp-QZ-dx2" id="USe-zs-oub"/>
                         <outlet property="mLabelAlert1" destination="ove-fz-55j" id="5HV-pb-Ood"/>
                         <outlet property="mLabelAlert2" destination="tv7-P1-uGe" id="9IC-FY-bLz"/>
@@ -231,6 +239,7 @@
         <class className="SDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SDViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="mImageAlert" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mLabelAlert" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mLabelAlert1" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="mLabelAlert2" candidateClass="UILabel"/>

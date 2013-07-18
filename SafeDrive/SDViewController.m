@@ -21,6 +21,7 @@
 @synthesize mViewLock;
 @synthesize mViewBG;
 @synthesize mViewCircle;
+@synthesize mImageAlert;
 
 
 - (void)viewDidLoad
@@ -32,27 +33,35 @@
     [mLabelKMH setFont:[UIFont fontWithName:f size:mLabelKMH.font.pointSize]];
     [mLabelSpeedText setFont:[UIFont fontWithName:f size:mLabelSpeedText.font.pointSize]];
     
-    NSMutableAttributedString *s = [[NSMutableAttributedString alloc] initWithAttributedString:mLabelAlert.attributedText];
-    // OVER 15 km/h
-    // index, length
-    //OVER 0, 4
-    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:70.0] range:NSMakeRange(0, 4)];
-    //     4, 1
-    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:20.0] range:NSMakeRange(4, 1)];
-    // 15  5, 2
-    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:114.0] range:NSMakeRange(5, 2)];
-    //     7, 1
-    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:20.0] range:NSMakeRange(7, 1)];
-    // km/h 8, 4
-    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:30.0] range:NSMakeRange(8, 4)];
-    [mLabelAlert setAttributedText:s];
+    
+    // Use Font
+//    NSMutableAttributedString *s = [[NSMutableAttributedString alloc] initWithAttributedString:mLabelAlert.attributedText];
+//    // OVER 15 km/h
+//    // index, length
+//    //OVER 0, 4
+//    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:70.0] range:NSMakeRange(0, 4)];
+//    //     4, 1
+//    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:20.0] range:NSMakeRange(4, 1)];
+//    // 15  5, 2
+//    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:114.0] range:NSMakeRange(5, 2)];
+//    //     7, 1
+//    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:20.0] range:NSMakeRange(7, 1)];
+//    // km/h 8, 4
+//    [s addAttribute:NSFontAttributeName value:[UIFont fontWithName:f size:30.0] range:NSMakeRange(8, 4)];
+//    [mLabelAlert setAttributedText:s];
+//    
+//
+//    
+//    [mLabelAlert1 setFont:[UIFont fontWithName:f size:mLabelAlert1.font.pointSize]];
+//    [mLabelAlert2 setFont:[UIFont fontWithName:f size:mLabelAlert2.font.pointSize]];
+//    [mLabelAlert3 setFont:[UIFont fontWithName:f size:mLabelAlert3.font.pointSize]];
     
 
-    
-    [mLabelAlert1 setFont:[UIFont fontWithName:f size:mLabelAlert1.font.pointSize]];
-    [mLabelAlert2 setFont:[UIFont fontWithName:f size:mLabelAlert2.font.pointSize]];
-    [mLabelAlert3 setFont:[UIFont fontWithName:f size:mLabelAlert3.font.pointSize]];
-    
+    // Use Image
+    if(self.view.frame.size.height <= 480)
+        [mImageAlert setImage:[UIImage imageNamed:@"alert_iphone4.png"]];
+    else
+        [mImageAlert setImage:[UIImage imageNamed:@"alert_iphone5.png"]];
 }
 
 - (void)didReceiveMemoryWarning
