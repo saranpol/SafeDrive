@@ -13,6 +13,7 @@
 
 
 @synthesize mLocationManager;
+@synthesize mLastTimeSendPush;
 
 //static UIBackgroundTaskIdentifier bgTask;
 
@@ -109,6 +110,16 @@
 
 
 - (void)sendLocalPush {
+    
+    if(mLastTimeSendPush){
+        NSTimeInterval diff = [[NSDate date] timeIntervalSinceDate:mLastTimeSendPush];
+        NSLog(@"diff %f", diff);
+        if(diff < 3.0)
+            return;
+    }
+    
+    self.mLastTimeSendPush = [NSDate date];
+    
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
     localNotif.fireDate = [NSDate date];;
     localNotif.alertBody = @"ควรหยุดใช้การพิมพ์ข้อความ";

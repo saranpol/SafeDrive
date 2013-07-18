@@ -15,5 +15,6 @@
 @property (strong, nonatomic) UIWindow *window;
 
 @property (nonatomic, strong) CLLocationManager *mLocationManager;
+@property (nonatomic, strong) NSDate *mLastTimeSendPush;
 
 @end
